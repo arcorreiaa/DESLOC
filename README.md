@@ -93,6 +93,10 @@ Para ambiente local, utilizar o arquivo `.env` conforme `.env.example` (configur
 
 Execução opcional em containers: `docker compose up --build`.
 
+### Demonstração em vídeo
+
+Gravação da aplicação em uso (simulador + estimativa).
+
 ---
 
 ## 6. Estrutura do repositório
@@ -100,12 +104,11 @@ Execução opcional em containers: `docker compose up --build`.
 ```
 api/              Backend TypeScript (Express, Zod, OpenAPI)
 web/              Frontend TypeScript (React, Vite, Leaflet)
+assets/           Demonstração em vídeo da aplicação
 package.json      Orquestra API + web (`npm start`)
 docker-compose.yml
 .env.example
 ```
-
-
 
 Não há notebooks, scripts de pipeline nem artefatos de modelo neste repositório.
 
