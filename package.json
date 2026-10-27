@@ -1,0 +1,15 @@
+{
+  "name": "desloc-mlops",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npm install --prefix api && npm install --prefix web",
+    "predev": "node -e \"const f=require('fs');if(!f.existsSync('.env')){console.error('\\nCrie .env na raiz (copie de .env.example).\\n');process.exit(1)}\"",
+    "prestart": "npm run predev",
+    "dev:stack": "concurrently -k -n API,WEB -c cyan.bold,green.bold \"npm run dev --prefix api\" \"npm run dev --prefix web\"",
+    "dev": "npm run dev:stack",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
