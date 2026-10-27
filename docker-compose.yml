@@ -1,0 +1,17 @@
+services:
+  api:
+    build: ./api
+    env_file: .env
+    ports:
+      - '${API_PORT:-3001}:3001'
+    environment:
+      API_PORT: 3001
+
+  web:
+    build: ./web
+    ports:
+      - '5173:5173'
+    environment:
+      API_PROXY_TARGET: http://api:3001
+    depends_on:
+      - api
