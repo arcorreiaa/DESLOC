@@ -12,7 +12,7 @@
 
 Desenvolver, sobre o ecossistema de mobilidade **DESLOC**, uma solução de MLOps que atenda ao enunciado da disciplina: modelagem de **duração** e **valor** da corrida, validação de hipótese de negócio, **serviço de inferência** e **aplicação** para o usuário final escolher origem e destino e visualizar a estimativa.
 
-Este repositório Git contém exclusivamente a **aplicação** (API REST e interface web). Todo o pipeline de dados, treinamento, validação e publicação de inferência foi implementado no **Databricks**, no workspace do aluno.
+Este repositório Git contém exclusivamente a **aplicação** (API REST e interface web). Todo o pipeline de dados, treinamento, validação e publicação de inferência foi implementado no **Databricks**.
 
 ---
 
@@ -30,7 +30,7 @@ Este repositório Git contém exclusivamente a **aplicação** (API REST e inter
 
 ## 3. Trabalho realizado no Databricks
 
-A seguir, o que foi **feito no workspace** (não faz parte deste Git). Os notebooks e tabelas estão no catálogo/schema da prova (`esuda_mlops_prova`), no ambiente Databricks.
+A seguir, o que foi **feito no workspace** (não faz parte deste Git). Os notebooks e tabelas estão no catálogo/schema da prova (`esuda_mlops_prova`), no Databricks.
 
 ### 3.1 Dados
 
@@ -51,7 +51,7 @@ A seguir, o que foi **feito no workspace** (não faz parte deste Git). Os notebo
 - Saída: JSON com valor previsto, duração estimada em minutos, distâncias e metadados de apoio.
 - A função consolida as previsões treinadas no pipeline (incluindo OOF de duração) e regras de calibração de distância e limites de duração coerentes com o histórico.
 
-A documentação operacional dos notebooks, ordem de execução e manutenção do pipeline **permanece no Databricks**.
+A ordem de execução e manutenção do pipeline **permanece no Databricks**.
 
 ---
 
@@ -89,8 +89,6 @@ npm start
 | Simulador     | http://localhost:5173          |
 | API (Swagger) | http://localhost:3001/api/docs |
 
-**Roteiro de demonstração:** abrir o simulador → definir origem e destino → **Estimar corrida** → conferir valor e duração.
-
 Para ambiente local, utilizar o arquivo `.env` conforme `.env.example` (configuração de acesso ao serviço de inferência — não versionado).
 
 Execução opcional em containers: `docker compose up --build`.
@@ -106,6 +104,8 @@ package.json      Orquestra API + web (`npm start`)
 docker-compose.yml
 .env.example
 ```
+
+
 
 Não há notebooks, scripts de pipeline nem artefatos de modelo neste repositório.
 
