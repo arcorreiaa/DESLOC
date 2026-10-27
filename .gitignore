@@ -1,0 +1,12 @@
+.env
+.env.local
+.env.*.local
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+web/dist/
+api/dist/
+.idea/
+*.log
