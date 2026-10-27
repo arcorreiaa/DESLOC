@@ -95,7 +95,12 @@ Execução opcional em containers: `docker compose up --build`.
 
 ### Demonstração em vídeo
 
-<video controls width="100%" src="https://raw.githubusercontent.com/arcorreiaa/DESLOC/main/assets/demo-aplicacao.mp4"></video>
+Gravação da aplicação em uso (simulador + estimativa).
+
+| | |
+| --- | --- |
+| **Demonstração (MP4)** | [Baixar ou assistir](https://raw.githubusercontent.com/arcorreiaa/DESLOC/main/assets/demo-aplicacao.mp4) |
+| Arquivo no repositório | [assets/demo-aplicacao.mp4](https://github.com/arcorreiaa/DESLOC/blob/main/assets/demo-aplicacao.mp4) |
 
 ---
 
